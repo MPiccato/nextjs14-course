@@ -4,7 +4,7 @@ import { fetchCustomers, fetchInvoiceById } from '@/app/lib/data';
 
 
 export default async function Page({ params }: { params: { id: string } }) {
-    const if = params.id;
+    const id = params.id;
     const invoice = await fetchInvoiceById(id);
     return (
         <main>
